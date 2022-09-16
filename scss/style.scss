@@ -13,7 +13,7 @@ html {
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #555;
+	background-color: $bg-color;
 }
 
 h2 {
@@ -186,6 +186,88 @@ header {
 	}
 }
 
+.prices {
+	.prices-box {
+		padding: 30px;
+		margin: 20px 10px;
+		background-color: $white;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+		transition: transform 0.3s;
+
+		h3 {
+			color: $main-color;
+			text-transform: uppercase;
+		}
+		span {
+			font-weight: bold;
+		}
+
+		i {
+			padding: 0 5px;
+			font-size: 24px;
+		}
+		button {
+			padding: 10px 20px;
+			text-transform: uppercase;
+		}
+		.price-tag {
+			font-size: 30px;
+			font-weight: bold;
+		}
+	}
+
+	.prices-box:hover {
+		transform: scale(1.05);
+	}
+
+	.price-info {
+		margin-top: 30px;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.team {
+	position: relative;
+	background-image: url('/img/sala-big.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+	h2 {
+		color: $light-gary;
+	}
+	.team-shadow {
+		top: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -5;
+	}
+
+	.card {
+		transition: transform 0.3s;
+		img {
+			height: 300px;
+			object-fit: cover;
+		}
+
+		i {
+			padding: 10px;
+		}
+	}
+	.card:hover {
+		transform: scale(0.96);
+	}
+
+	.card-title {
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
 @media (min-width: 375px) {
 	header {
 		h1 {
@@ -213,6 +295,11 @@ header {
 	}
 	.aboutus-hero {
 		background-image: url(/img/technology-big.jpg);
+	}
+	.prices {
+		.price-info {
+			font-size: 18px;
+		}
 	}
 }
 @media (min-width: 1200px) {
