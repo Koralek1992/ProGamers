@@ -266,6 +266,9 @@ header {
 		text-transform: uppercase;
 		text-align: center;
 	}
+	.card-body {
+		height: 160px;
+	}
 }
 
 @media (min-width: 375px) {

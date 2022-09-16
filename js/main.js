@@ -10,7 +10,7 @@ function addShadow() {
     }
 }
 
-allNavItems.forEach(item => item.addEventListener('click', () => navList.remove('show')))
+allNavItems.forEach(item => item.addEventListener('click', () => navList.togg('show')))
 
 window.addEventListener('scroll', addShadow)
 })
